@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Destek — Steh - Alarm</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #F1EFF7;
+    --surface: #FFFFFF;
+    --primary: #5B4EE5;
+    --secondary: #FF6B4A;
+    --ink: #1E1B2E;
+    --ink-muted: #726E8A;
+    --border: #DEDAF0;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'Fredoka', system-ui, -apple-system, sans-serif;
+    line-height: 1.6;
+  }
+  .wrap {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 48px 24px 96px;
+  }
+  header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 40px;
+  }
+  .mascot {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--surface);
+    border: 2px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+  }
+  .brand { font-weight: 700; font-size: 22px; }
+  .card {
+    background: var(--surface);
+    border: 2px solid var(--border);
+    border-radius: 20px;
+    padding: 28px;
+    margin-bottom: 20px;
+  }
+  h1 { font-size: 28px; font-weight: 700; margin: 0 0 8px; }
+  h2 { font-size: 17px; font-weight: 600; margin: 0 0 8px; color: var(--primary); }
+  p { font-size: 15.5px; margin: 0 0 4px; }
+  a.button {
+    display: inline-block;
+    margin-top: 12px;
+    background: var(--primary);
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 12px 20px;
+    border-radius: 999px;
+    font-size: 15px;
+  }
+  a { color: var(--primary); }
+  details { margin-bottom: 4px; }
+  summary {
+    cursor: pointer;
+    font-weight: 600;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--border);
+  }
+  details p { padding: 12px 0 4px; color: var(--ink-muted); }
+  footer {
+    margin-top: 48px;
+    text-align: center;
+    color: var(--ink-muted);
+    font-size: 13px;
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="mascot">🐱</div>
+      <div class="brand">Steh - Alarm</div>
+    </header>
+
+    <div class="card">
+      <h1>Yardıma mı ihtiyacın var?</h1>
+      <p>Bir sorun, öneri ya da soru varsa bize e-posta ile ulaşabilirsin, elimizden geldiğince
+      hızlı dönüş yaparız.</p>
+      <a class="button" href="mailto:destek@croga.dev">destek@croga.dev</a>
+    </div>
+
+    <div class="card">
+      <h2>Sık sorulan sorular</h2>
+      <details>
+        <summary>Alarm çalmıyor, neden?</summary>
+        <p>Bildirim izni verildiğinden ve telefonun Rahatsız Etmeyin/Odaklanma modunun alarm
+        saatinde uygulamayı engellemediğinden emin ol. Ayarlar → Bildirimler → Steh - Alarm'dan
+        izni kontrol edebilirsin.</p>
+      </details>
+      <details>
+        <summary>Premium aboneliğimi nasıl iptal ederim?</summary>
+        <p>iPhone Ayarlar → Apple ID'niz → Abonelikler yolundan, App Store üzerinden yönettiğin
+        tüm abonelikleri iptal edebilirsin.</p>
+      </details>
+      <details>
+        <summary>Satın aldığım Premium'u yeni telefonuma nasıl aktarırım?</summary>
+        <p>Uygulama içinde Ayarlar → "Satın Almaları Geri Yükle" ile, aynı Apple ID'yle giriş
+        yaptığın her cihazda Premium otomatik olarak geri gelir.</p>
+      </details>
+      <details>
+        <summary>Hesabımı ve verilerimi nasıl sildiririm?</summary>
+        <p>Arkadaşlar özelliği için oluşturduğun hesabın silinmesini istersen
+        destek@croga.dev adresinden bize yazman yeterli.</p>
+      </details>
+    </div>
+
+    <p style="text-align:center"><a href="/gizlilik.html">Gizlilik Politikası</a></p>
+
+    <footer>Steh - Alarm · croga.dev</footer>
+  </div>
+</body>
+</html>
